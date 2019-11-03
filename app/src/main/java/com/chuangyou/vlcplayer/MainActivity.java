@@ -16,10 +16,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        //设置main
         setContentView(R.layout.activity_main);
-
+        //设置video
         SurfaceView surfaceView = findViewById(R.id.video);
-
         //获取holder
         SurfaceHolder holder = surfaceView.getHolder();
         //设置
@@ -31,10 +31,11 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
         ArrayList<String> options = new ArrayList<>();
+        //设置
         options.add("--aout=opensles");
         //audio
         options.add("--audio-time-stretch");
-        // verbosity
+        //verbosity
         options.add("-vvv");
         LibVLC libVLC = new LibVLC(getBaseContext(), options);
         //创建media
@@ -45,7 +46,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         mediaPlayer.getVLCVout().setVideoSurface(holder.getSurface(), holder);
         //添加
         mediaPlayer.getVLCVout().attachViews();
-
+        //设置大小
         mediaPlayer.getVLCVout().setWindowSize(holder.getSurfaceFrame().width(), holder.getSurfaceFrame().height());
         //final Media media = new Media(libVLC, Uri.parse("http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"));
         mediaPlayer.setMedia(media);
