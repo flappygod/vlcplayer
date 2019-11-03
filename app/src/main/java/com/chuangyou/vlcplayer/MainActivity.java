@@ -12,7 +12,7 @@ import org.videolan.libvlc.MediaPlayer;
 
 import java.util.ArrayList;
 
-public class MainActivityextends extends Activity implements SurfaceHolder.Callback {
+public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);

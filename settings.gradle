@@ -1,2 +1,1 @@
-include ':libvlc', ':api', ':medialibrary', ':tools'
-include ':vlcplayer'
+include ':app'
