@@ -44,10 +44,6 @@ dependencies {
     //引入libs
     api fileTree(include: ['*.jar'], dir: 'libs')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation(name: 'api', ext: 'aar')
-    implementation(name: 'libvlc', ext: 'aar')
-    implementation(name: 'medialibrary', ext: 'aar')
-    implementation(name: 'tools', ext: 'aar')
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
