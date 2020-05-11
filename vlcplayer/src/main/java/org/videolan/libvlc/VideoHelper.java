@@ -15,7 +15,7 @@ import android.view.ViewStub;
 import android.widget.FrameLayout;
 
 
-import com.chuangyou.vlcplayer2.R;
+import com.chuangyou.vlcplayer.R;
 
 import org.videolan.libvlc.util.DisplayManager;
 

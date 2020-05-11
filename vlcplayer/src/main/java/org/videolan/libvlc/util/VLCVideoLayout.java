@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.chuangyou.vlcplayer2.R;
+import com.chuangyou.vlcplayer.R;
 
 import org.videolan.libvlc.MediaPlayer;
 

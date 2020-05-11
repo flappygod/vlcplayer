@@ -23,8 +23,8 @@ import androidx.annotation.RequiresApi;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 
-import com.chuangyou.vlcplayer2.BuildConfig;
-import com.chuangyou.vlcplayer2.R;
+import com.chuangyou.vlcplayer.BuildConfig;
+import com.chuangyou.vlcplayer.R;
 
 
 public class DisplayManager {
