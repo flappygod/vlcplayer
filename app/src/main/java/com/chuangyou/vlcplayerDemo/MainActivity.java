@@ -1,4 +1,4 @@
-package com.chuangyou.vlcplayer;
+package com.chuangyou.vlcplayerDemo;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -9,6 +9,7 @@ import android.view.SurfaceView;
 import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.Media;
 import org.videolan.libvlc.MediaPlayer;
+
 
 import java.util.ArrayList;
 
@@ -37,9 +38,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         options.add("--audio-time-stretch");
         //verbosity
         options.add("-vvv");
-        LibVLC libVLC = new LibVLC(getBaseContext(), options);
+        org.videolan.libvlc.LibVLC libVLC = new LibVLC(getBaseContext(), options);
         //创建media
-        final Media media = new Media(libVLC, Uri.parse("rtmp://58.200.131.2:1935/livetv/hunantv"));
+        final Media media = new Media(libVLC, Uri.parse("http://61.129.33.182:6643/longlingmiku/01.mp4"));
         //创建player
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         //设置suface

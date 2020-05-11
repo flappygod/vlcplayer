@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.PixelFormat;
 import android.media.MediaRouter;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -18,11 +19,12 @@ import org.videolan.libvlc.RendererItem;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 
-import com.chuangyou.vlcplayer.BuildConfig;
-import com.chuangyou.vlcplayer.R;
+import com.chuangyou.vlcplayer2.BuildConfig;
+import com.chuangyou.vlcplayer2.R;
 
 
 public class DisplayManager {
@@ -40,6 +42,7 @@ public class DisplayManager {
     private DisplayType mDisplayType;
     private int mPresentationId = -1;
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public DisplayManager(@NonNull Activity activity, @Nullable LiveData<RendererItem> selectedRender, boolean textureView, boolean cloneMode, boolean benchmark) {
         mActivity = activity;
         mSelectedRenderer = selectedRender;

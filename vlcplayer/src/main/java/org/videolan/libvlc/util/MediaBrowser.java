@@ -26,12 +26,12 @@ import androidx.annotation.MainThread;
 import android.util.Log;
 
 import org.videolan.libvlc.FactoryManager;
+import org.videolan.libvlc.MediaDiscoverer;
+import org.videolan.libvlc.MediaList;
 import org.videolan.libvlc.interfaces.IMediaFactory;
+import org.videolan.libvlc.interfaces.IMediaList;
 import org.videolan.libvlc.interfaces.ILibVLC;
 import org.videolan.libvlc.interfaces.IMedia;
-import org.videolan.libvlc.MediaDiscoverer;
-import org.videolan.libvlc.interfaces.IMediaList;
-import org.videolan.libvlc.MediaList;
 
 import java.util.ArrayList;
 

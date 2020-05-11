@@ -32,10 +32,10 @@ import android.os.Parcelable;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
-import org.videolan.libvlc.interfaces.ILibVLC;
 import org.videolan.libvlc.LibVLC;
-import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.Media;
+import org.videolan.libvlc.interfaces.ILibVLC;
+import org.videolan.libvlc.interfaces.IMedia;
 
 import java.io.FileDescriptor;
 import java.io.IOException;

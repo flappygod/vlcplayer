@@ -42,10 +42,10 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.MediaController;
 
 
-import org.videolan.libvlc.interfaces.ILibVLC;
 import org.videolan.libvlc.LibVLC;
-import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.Media;
+import org.videolan.libvlc.interfaces.ILibVLC;
+import org.videolan.libvlc.interfaces.IMedia;
 
 import java.io.InputStream;
 import java.util.Map;

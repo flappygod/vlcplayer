@@ -3,9 +3,9 @@ package org.videolan.libvlc.stubs;
 import android.content.res.AssetFileDescriptor;
 import android.net.Uri;
 
+import org.videolan.libvlc.interfaces.IMediaList;
 import org.videolan.libvlc.interfaces.ILibVLC;
 import org.videolan.libvlc.interfaces.IMedia;
-import org.videolan.libvlc.interfaces.IMediaList;
 
 import java.io.FileDescriptor;
 

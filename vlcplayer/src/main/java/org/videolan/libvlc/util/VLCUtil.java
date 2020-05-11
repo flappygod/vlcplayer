@@ -28,10 +28,6 @@ import android.os.Build;
 import androidx.annotation.NonNull;
 import android.util.Log;
 
-import org.videolan.libvlc.interfaces.ILibVLC;
-import org.videolan.libvlc.interfaces.IMedia;
-import org.videolan.libvlc.Media;
-
 import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.File;

@@ -15,12 +15,13 @@ import android.view.ViewStub;
 import android.widget.FrameLayout;
 
 
-import com.chuangyou.vlcplayer.R;
+import com.chuangyou.vlcplayer2.R;
+
+import org.videolan.libvlc.util.DisplayManager;
 
 import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.interfaces.IVLCVout;
 import org.videolan.libvlc.util.AndroidUtil;
-import org.videolan.libvlc.util.DisplayManager;
 import org.videolan.libvlc.util.VLCVideoLayout;
 
 class VideoHelper implements IVLCVout.OnNewVideoLayoutListener {
@@ -44,7 +45,7 @@ class VideoHelper implements IVLCVout.OnNewVideoLayoutListener {
     private View.OnLayoutChangeListener mOnLayoutChangeListener = null;
     private DisplayManager mDisplayManager;
 
-    private org.videolan.libvlc.MediaPlayer mMediaPlayer;
+    private MediaPlayer mMediaPlayer;
 
     VideoHelper(MediaPlayer player, VLCVideoLayout surfaceFrame, DisplayManager dm, boolean subtitles, boolean textureView) {
         init(player, surfaceFrame, dm, subtitles, !textureView);

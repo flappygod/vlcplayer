@@ -2,8 +2,8 @@ package org.videolan.libvlc.stubs;
 
 import android.os.Handler;
 
-import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.interfaces.IMediaList;
+import org.videolan.libvlc.interfaces.IMedia;
 
 public class StubMediaList extends StubVLCObject<IMediaList.Event> implements IMediaList {
     @Override
