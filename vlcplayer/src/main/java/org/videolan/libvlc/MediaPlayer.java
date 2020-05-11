@@ -145,7 +145,7 @@ public class MediaPlayer extends VLCObject<MediaPlayer.Event> {
         }
     }
 
-    public interface EventListener extends AbstractVLCEvent.Listener<MediaPlayer.Event> {}
+    public interface EventListener extends AbstractVLCEvent.Listener<Event> {}
 
     public static class Position {
         public static final int Disable = -1;
@@ -1055,9 +1055,9 @@ public class MediaPlayer extends VLCObject<MediaPlayer.Event> {
         if (!enabled) {
             setVideoTrack(-1);
         } else if (!isReleased() && hasMedia() && getVideoTrack() == -1) {
-            final MediaPlayer.TrackDescription tracks[] = getVideoTracks();
+            final TrackDescription tracks[] = getVideoTracks();
             if (tracks != null) {
-                for (MediaPlayer.TrackDescription track : tracks) {
+                for (TrackDescription track : tracks) {
                     if (track.id != -1) {
                         setVideoTrack(track.id);
                         break;

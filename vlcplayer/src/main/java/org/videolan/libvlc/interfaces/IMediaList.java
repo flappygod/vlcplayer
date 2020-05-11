@@ -35,7 +35,7 @@ public interface IMediaList extends IVLCObject<IMediaList.Event> {
         }
     }
 
-    interface EventListener extends AbstractVLCEvent.Listener<IMediaList.Event> {
+    interface EventListener extends AbstractVLCEvent.Listener<Event> {
     }
 
     void setEventListener(EventListener listener, Handler handler);

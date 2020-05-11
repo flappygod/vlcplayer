@@ -23,11 +23,11 @@ package org.videolan.libvlc.util;
 import android.net.Uri;
 import androidx.annotation.MainThread;
 
-import org.videolan.libvlc.LibVLC;
-import org.videolan.libvlc.MediaPlayer;
 import org.videolan.libvlc.interfaces.ILibVLC;
+import org.videolan.libvlc.LibVLC;
 import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.Media;
+import org.videolan.libvlc.MediaPlayer;
 
 import java.util.ArrayList;
 

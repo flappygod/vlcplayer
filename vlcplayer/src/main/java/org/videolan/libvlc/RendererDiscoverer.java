@@ -63,7 +63,7 @@ public class RendererDiscoverer extends VLCObject<RendererDiscoverer.Event> {
         return new RendererItem(name, type, iconUrl, flags, ref);
     }
 
-    public interface EventListener extends AbstractVLCEvent.Listener<RendererDiscoverer.Event> {}
+    public interface EventListener extends AbstractVLCEvent.Listener<Event> {}
 
     /**
      * Create a MediaDiscover.

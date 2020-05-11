@@ -68,7 +68,7 @@ public class MediaDiscoverer extends VLCObject<MediaDiscoverer.Event> {
         return new Description(name, longName, category);
     }
 
-    public interface EventListener extends AbstractVLCEvent.Listener<MediaDiscoverer.Event> {}
+    public interface EventListener extends AbstractVLCEvent.Listener<Event> {}
 
     private MediaList mMediaList = null;
 

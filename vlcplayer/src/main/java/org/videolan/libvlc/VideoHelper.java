@@ -14,14 +14,12 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.FrameLayout;
 
-
-import com.chuangyou.vlcplayer.R;
-
-import org.videolan.libvlc.util.DisplayManager;
+import com.flappygo.flutter_for_vlcplayer.R;
 
 import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.interfaces.IVLCVout;
 import org.videolan.libvlc.util.AndroidUtil;
+import org.videolan.libvlc.util.DisplayManager;
 import org.videolan.libvlc.util.VLCVideoLayout;
 
 class VideoHelper implements IVLCVout.OnNewVideoLayoutListener {

@@ -26,12 +26,12 @@ import androidx.annotation.MainThread;
 import android.util.Log;
 
 import org.videolan.libvlc.FactoryManager;
-import org.videolan.libvlc.MediaDiscoverer;
-import org.videolan.libvlc.MediaList;
 import org.videolan.libvlc.interfaces.IMediaFactory;
-import org.videolan.libvlc.interfaces.IMediaList;
 import org.videolan.libvlc.interfaces.ILibVLC;
 import org.videolan.libvlc.interfaces.IMedia;
+import org.videolan.libvlc.MediaDiscoverer;
+import org.videolan.libvlc.interfaces.IMediaList;
+import org.videolan.libvlc.MediaList;
 
 import java.util.ArrayList;
 
@@ -188,7 +188,7 @@ public class MediaBrowser {
      * Browse to the specified local path starting with '/'.
      *
      * @param path
-     * @param flags see {@link MediaBrowser.Flag}
+     * @param flags see {@link Flag}
      */
     @MainThread
     public void browse(String path, int flags) {
@@ -201,7 +201,7 @@ public class MediaBrowser {
      * Browse to the specified uri.
      *
      * @param uri
-     * @param flags see {@link MediaBrowser.Flag}
+     * @param flags see {@link Flag}
      */
     @MainThread
     public void browse(Uri uri, int flags) {
@@ -214,7 +214,7 @@ public class MediaBrowser {
      * Browse to the specified media.
      *
      * @param media Can be a media returned by MediaBrowser.
-     * @param flags see {@link MediaBrowser.Flag}
+     * @param flags see {@link Flag}
      */
     @MainThread
     public void browse(IMedia media, int flags) {
