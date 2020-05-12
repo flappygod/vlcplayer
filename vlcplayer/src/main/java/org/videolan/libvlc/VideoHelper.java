@@ -14,7 +14,8 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.FrameLayout;
 
-import com.flappygo.flutter_for_vlcplayer.R;
+
+import com.chuangyou.vlcplayer.R;
 
 import org.videolan.libvlc.interfaces.IMedia;
 import org.videolan.libvlc.interfaces.IVLCVout;

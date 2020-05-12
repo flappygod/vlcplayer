@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.flappygo.flutter_for_vlcplayer.R;
+import com.chuangyou.vlcplayer.R;
 
 import org.videolan.libvlc.MediaPlayer;
 
