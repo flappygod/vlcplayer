@@ -15,6 +15,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
+    private MediaPlayer mediaPlayer;
+
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         //设置main
@@ -42,7 +44,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         //创建media
         final Media media = new Media(libVLC, Uri.parse("http://61.129.33.182:6643/longlingmiku/01.mp4"));
         //创建player
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
+         mediaPlayer = new MediaPlayer(media);
         //设置suface
         mediaPlayer.getVLCVout().setVideoSurface(holder.getSurface(), holder);
         //添加
@@ -63,5 +65,17 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
 
+        if (mediaPlayer != null) {
+            //暂停
+            mediaPlayer.pause();
+            //停止
+            mediaPlayer.stop();
+            //释放
+            if (mediaPlayer.getMedia() != null && mediaPlayer.getMedia() instanceof Media) {
+                ((Media) mediaPlayer.getMedia()).releaseForce();
+            }
+            //释放
+            mediaPlayer.releaseForce();
+        }
     }
 }
