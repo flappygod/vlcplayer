@@ -108,6 +108,9 @@ abstract class VLCObject<T extends AbstractVLCEvent> implements IVLCObject<T> {
 
     @Override
     protected synchronized void finalize() {
+        if (!isReleased()){
+            releaseForce();
+        }
         if (!isReleased())
             throw new AssertionError("VLCObject (" + getClass().getName() + ") finalized but not natively released (" + mNativeRefCount + " refs)");
     }
