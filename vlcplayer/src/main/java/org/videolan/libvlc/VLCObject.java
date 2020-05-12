@@ -99,7 +99,7 @@ abstract class VLCObject<T extends AbstractVLCEvent> implements IVLCObject<T> {
     }
 
     //release force
-    public void  releaseForce(){
+    private void  releaseForce(){
         mNativeRefCount=0;
         setEventListener(null);
         nativeDetachEvents();
